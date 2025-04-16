@@ -200,7 +200,7 @@ def visualize_detections(model, dataset, num_samples=5):
         # Denormalize the image first
         denormalized_image = denormalize_image(image, mean, std)
         # Convert to PIL image for left panel (ground truth)
-        original_img = F.to_pil_image(denormalized_image)
+        original_img = FT.to_pil_image(denormalized_image)
 
         # Draw ground truth boxes
         gt_img = original_img.copy()
@@ -282,7 +282,7 @@ def visualize_feature_maps(model, dataset, num_samples=2):
 
         denormalized_image = denormalize_image(image, mean, std)
 
-        original_img = F.to_pil_image(denormalized_image)
+        original_img = FT.to_pil_image(denormalized_image)
 
         # Plot the feature maps
         plt.figure(figsize=(15, 8))
@@ -1654,7 +1654,7 @@ def main():
     valid_annotations = os.path.join(data_root, "valid.json")
 
     # Switch between training and testing
-    do_training = False
+    do_training = True
 
     if do_training:
         train_digit_detector(
