@@ -29,7 +29,13 @@ cd visual-recognition-hw2
 └── valid.json
 ```
 
-3. Run the model:
+3. Install the required Python packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Run the model:
    - For training:
      ```python
      # Set do_training = True in train_digit_detector.py
@@ -40,14 +46,6 @@ cd visual-recognition-hw2
      # Set do_training = False in train_digit_detector.py
      python train_digit_detector.py
      ```
-
-## How to install dependencies
-
-Install the required Python packages:
-
-```bash
-pip install -r requirements.txt
-```
 
 ## Performance snapshot
 
