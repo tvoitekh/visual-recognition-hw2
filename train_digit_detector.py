@@ -10,7 +10,6 @@ import timm
 from PIL import Image, ImageDraw
 import glob
 from torch.utils.data import Dataset
-import torch.nn.functional as F
 import numpy as np
 import random
 import torchvision.transforms.functional as FT
